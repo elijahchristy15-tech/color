@@ -20,5 +20,19 @@
     <body>
         <h1>hi this is cool!</h1>
         <h1>ik im blue</h1>
+      <button onclick="changeBackground()">click me</button>
+
+      <script>
+        let isBlue = true;
+        
+        function changeBackground() {
+          if (isBlue) {
+          document.body.style.backgroundColor = "lightgreen";
+        } else {
+            document.body.style.backgroundColor = "lightblue";
+          }
+          isBlue = !isBlue;
+        }
+      </script>
     </body>
  </html>
